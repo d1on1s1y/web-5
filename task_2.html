@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Задача 2</title>
+    <title>Simple Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;            /* flex-direction: column; */
+        }
+        .message {
+            margin: 5px 0;
+            padding: 5px;
+            width: 400px;
+            
+        }
+        .message.user1 {
+            align-self: flex-start;
+            background-color:darkgray
+        }
+        .message.user2 {
+            align-self: flex-end;
+            background-color: #d3ffd3;
+        }
+        .username {
+            font-size: 12px;
+        }
+        .input {
+            width: 400px;
+        }
+    </style>
 </head>
 <body>
-    
+
+<div >
+    <div id="user1">
+        <input class ='input' type="text" placeholder="User 1 message">
+        <button class="send-btn">Send</button>
+    </div>
+    <div id="user2">
+        <input class ='input' type="text" placeholder="User 2 message">
+        <button class="send-btn">Send</button>
+    </div>
+</div>
+
+
+    <div id="chat">
+        <div class="message user1">
+            <p>Lorem Ipsum is simply dummy text</p>
+            <div class="username">USER 1</div>
+        </div>
+        <div class="message user2">
+            <p>Lorem Ipsum is simply dummy text</p>
+            <div class="username">USER 2</div>
+        </div>
+    </div>
+
+
+<script src="/js/task_2.js"></script>
 </body>
 </html>
